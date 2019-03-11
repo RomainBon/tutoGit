@@ -11,22 +11,21 @@
     <header>
         <nav>
             <a href="#1">AVIS DE RECHERCHE 1</a>
-            <a href="#2">Tableau</a>
+            <a href="#2">INFO</a>
             <a href="#3">Contact formulaire</a>
         </nav>
     </header>
     <main>
         <article id='1' class="container">
-            <h2>Wanted : Romain Bonnenfant </h2>
-            <h3 ><strong style="background-color: gold" >Reward : 120,000 $</strong></h3>
-            <img src="../../Image/image.jpeg"/>
+            <h2><strong style="color: red">Wanted :</strong> the very dangerous Romain</h2>
+            <h3><strong style="background-color: gold" >Reward : 1,250,000 $</strong></h3>
+            <img src="../../Image/image.jpeg" alt="Le tete du mec rechercher"/>
+            <h1 style="color: red"><strong>Dead or Alive</strong></h1>
         </article>
         <div class="row" >
             <article>
                 <div class="col">
                     <h3 style="color: red">Attention :</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, doloremque. Labore aut hic beatae molestiae eaque, saepe voluptatibus quisquam in dolor porro! Omnis eos natus saepe obcaecati amet itaque autem.</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, doloremque. Labore aut hic beatae molestiae eaque, saepe voluptatibus quisquam in dolor porro! Omnis eos natus saepe obcaecati amet itaque autem.</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, doloremque. Labore aut hic beatae molestiae eaque, saepe voluptatibus quisquam in dolor porro! Omnis eos natus saepe obcaecati amet itaque autem.</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, doloremque. Labore aut hic beatae molestiae eaque, saepe voluptatibus quisquam in dolor porro! Omnis eos natus saepe obcaecati amet itaque autem.</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, doloremque. Labore aut hic beatae molestiae eaque, saepe voluptatibus quisquam in dolor porro! Omnis eos natus saepe obcaecati amet itaque autem.</p>
@@ -82,15 +81,15 @@
         </div>
         <article id="3">
             <h3>Formulaire de Contact :</h3>
-                <form>
+                <form action="index.html" method="GET">
                         <div class="form-row">
                           <div class="form-group col-md-6">
                             <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
                           </div>
                           <div class="form-group col-md-6">
-                            <label for="inputPassword4">Password</label>
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            <label for="message">message</label>
+                            <input type="text" class="form-control" id="message" placeholder="I see this man somehere" required>
                           </div>
                         </div>
                         <div class="form-group">
@@ -104,38 +103,50 @@
                         <div class="form-row">
                           <div class="form-group col-md-6">
                             <label for="inputCity">City</label>
-                            <input type="text" class="form-control" id="inputCity">
+                            <input type="text" class="form-control" id="inputCity" placeholder="your town">
                           </div>
                           <div class="form-group col-md-4">
                             <label for="inputState">State</label>
                             <select id="inputState" class="form-control">
                               <option selected>Choose...</option>
-                              <option>...</option>
+                              <option>France</option>
+                              <option>United-Kigdome</option>
+                              <option>United States of America</option>
+                              <option>Canda</option>
+                              <option>South-Africa</option>
+                              <option>Finland</option>
+                              <option>Island</option>
+                              <option>China</option>
+                              <option>Japon</option>
+                              <option>Spain</option>
+                              <option>Germany</option>
+                              <option>Italy</option>
+                              <option>Other</option>
                             </select>
                           </div>
                           <div class="form-group col-md-2">
-                            <label for="inputZip">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
+                            <label for="date2">Report Date</label>
+                            <input type="date" class="form-control" id="date2">
                           </div>
                         </div>
-                        <div class="form-group">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                              Check me out
-                            </label>
-                          </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="submit" class="btn btn-primary" >Send your report</button>
                       </form>
+        </article>
+        <article class="container">
+                <br/>
+                <video class="container" controls loop autoplay>
+                        <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                        Sorry, your browser doesn't support embedded videos.
+                </video>
         </article>
     </main><!-- contennue principale-->
     <footer>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <img src="../../Image/fbi.jpg"/>
         <p>Made by Romain </p>
-        <p>No copyright</p>
+        <p>Copyright</p>
     </footer><!-- pied de page-->
 </body>
 </html>
