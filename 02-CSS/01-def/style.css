@@ -1,0 +1,52 @@
+body{
+    background-color: hsla(209, 78%, 91%, 0.651);
+    text-align: center;
+    animation: blinker 1s linear infinite;
+}
+
+a{
+ color: rgb(168, 14, 168);
+}
+
+.important
+{
+    font-size: 125%;
+    font-style: oblique;
+}
+
+#reward
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gold;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+    border: inset 0.25em darkblue;
+    background-color: white;
+    border-radius: 5px; 
+}
+p::first-letter,h1::first-letter,h2::first-letter,h3::first-letter
+{
+    color: crimson;
+    font-size: 150%;
+    font-style: italic;
+}
+
+h2,h3{
+    color: crimson
+}
+
+h1{
+    font-size: 250%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: crimson;
+    text-decoration: underline;
+
+}
+
+img{
+    border: inset 0.5em crimson;
+    border-radius: 100%;
+}
