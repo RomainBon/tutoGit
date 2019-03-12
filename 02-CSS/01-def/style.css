@@ -1,52 +1,113 @@
+*
+{
+    margin: 0;
+    padding:0;
+}
 body{
-    background-color: hsla(209, 78%, 91%, 0.651);
+    display:grid:
+    background-color: black;
+    background-color: aliceblue;
     text-align: center;
-    animation: blinker 1s linear infinite;
+    background-image: url(../../Image/Blinking_warning2.gif);
 }
+nav
+{
 
-a{
- color: rgb(168, 14, 168);
 }
-
+a
+{
+    color:crimson;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+    font-size: 1.25em;
+}
 .important
 {
     font-size: 125%;
     font-style: oblique;
 }
-
 #reward
 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: gold;
+    font-size: 2em;
 }
-
 p{
+    border-radius: 5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: blue;
-    border: inset 0.25em darkblue;
-    background-color: white;
-    border-radius: 5px; 
+    color: black;
+    background-color: black;
+    border: inset 0.25em crimson;
+    margin-left: 25%;
+    margin-right: 25%; 
+    padding: 1em;
 }
-p::first-letter,h1::first-letter,h2::first-letter,h3::first-letter
+p::first-letter
+{
+    font-size : 1.5em;
+}
+p:hover
+{
+    color :white;
+}
+p:hover::first-letter
+{
+    color: crimson;
+}
+h1::first-letter,h2::first-letter,h3::first-letter
 {
     color: crimson;
     font-size: 150%;
     font-style: italic;
 }
-
 h2,h3{
-    color: crimson
+   color: crimson;
 }
-
 h1{
     font-size: 250%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: crimson;
     text-decoration: underline;
-
 }
-
 img{
     border: inset 0.5em crimson;
     border-radius: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;  
+}
+h1,h2,h3,nav
+{
+    border: inset 0.1em crimson;
+    background-color: black;
+    border-radius: 5em; 
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-left: auto;
+    padding-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;    
+}
+p,h1,h2,h3,img{
+    box-shadow: 0.3em 0.3em 0.3em red;
+}
+h4
+{
+    color: black;
+    padding-left: 1em;
+    padding-right:1em;
+    font-size :5em;
+    border : inset 0.1em crimson;
+    border-radius: 1em;
+    background-image: url(../../Image/wood.jpeg);
+    margin-bottom: 1em;
+    box-shadow: 0.5em 0.2em 0.3em red;
+}
+
+article
+{
+    margin-top: 2em;
+    margin-bottom: 2em;
+  
 }
