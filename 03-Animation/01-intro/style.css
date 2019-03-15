@@ -6,47 +6,47 @@
 body
 {
     background-image: url('../../Image/night.jpg');
-    /* background-size: cover; */
+    min-height:100vh;
+    
 }
 main{
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
     align-items: center;
-    animation: fond 8s linear infinite;
+    animation: fond 10s linear infinite;
+    height: 100vh;
 }
 @keyframes fond
 {
 
     0%
     {
-        background-color: hsla(197, 71%, 73%, 0);
+        background: linear-gradient(#89cfeb00, #89cfeb00);
     }
     25%
     {
-        background-color: hsla(197, 71%, 73%, 0);
-
+        background: linear-gradient(#89cfebe6, #89cfeb00);
     }
     50%
     {
-        background-color: hsla(197, 71%, 73%, 1);
+        background: linear-gradient(#89cfebe6, #89cfebe6);
     }
     75%
     {
-        background-color: hsla(197, 71%, 73%, 1);
+        background: linear-gradient(#89cfeb00 , #89cfebe6);
     }
     100%
     {
-        background-color: hsla(197, 71%, 73%, 0.0);
+        background: linear-gradient(#89cfeb00, #89cfeb00);
     }
 
 }
-img
+img:not(.ship)
 {
-    max-width: 900px;
-    max-height: 900px;
+    max-width: 700px;
+    max-height: 700px;
     margin:1em;
-    border:solid red
 }
 input
 {
@@ -64,8 +64,10 @@ input:hover
  {
     border-radius: 0.5em;
     background: darkcyan;
-    color:white; 
+    color:white;
+    
  }
+
  .loader
  {
      animation: rotate 8s linear running infinite;
@@ -87,27 +89,51 @@ input:hover
  }
  .loader2
  {
-     animation: rotate2 4s linear running infinite;
-     transition: all 4s linear;
+     animation: rotate2 8s linear running infinite;
+     transition: all 8s linear;
  }
  .loader3
  {
-     animation: rotate2 4s linear running infinite;
+     animation: rotate2 8s linear running infinite;
      animation-direction: reverse;
-     transition: all 4s linear;
+     transition: all 8s linear;
  }
  @keyframes rotate2
  {
     form {
         transform: rotate(0deg);
     }
-    50%
-    {
-       opacity: 0;
-    }
     to
     {
         transform: rotate(1turn);
+    }
+ }
+ .ship
+ {
+    max-height: 0.1em;
+    min-width: 100%;
+ }
+
+ .iship
+ {
+    height: 5em;
+    animation: letgo 5s linear running infinite;
+ }
+ @keyframes letgo
+ {
+    from 
+    { 
+        opacity: 1;
+        margin-left:-20%; 
+    } 
+    80%
+    {
+        opacity: 1;
+    }
+    to 
+    {
+        margin-left:95%;
+        opacity: 0;
     }
  }
  /* .loader2:hover,.loader3:hover
