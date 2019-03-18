@@ -19,28 +19,26 @@ main{
 }
 @keyframes fond
 {
-
     0%
     {
-        background: linear-gradient(#89cfeb00, #89cfeb00);
+        background-color: #89cfeb00;
     }
     25%
     {
-        background: linear-gradient(#89cfebe6, #89cfeb00);
+        background-color: #89cfeb00;
     }
     50%
     {
-        background: linear-gradient(#89cfebe6, #89cfebe6);
+        background-color: #89cfebe6;
     }
     75%
     {
-        background: linear-gradient(#89cfeb00 , #89cfebe6);
+        background-color: #89cfebe6;
     }
     100%
     {
-        background: linear-gradient(#89cfeb00, #89cfeb00);
+        background-color: #89cfeb00;
     }
-
 }
 img:not(.ship)
 {
@@ -70,7 +68,7 @@ input:hover
 
  .loader
  {
-     animation: rotate 8s linear running infinite;
+     animation: rotate 16s linear running infinite;
  }
  @keyframes rotate
  {
@@ -97,7 +95,7 @@ input:hover
      animation: rotate2 8s linear running infinite;
      animation-direction: reverse;
      transition: all 8s linear;
- }
+}
  @keyframes rotate2
  {
     form {
@@ -116,12 +114,12 @@ input:hover
 
  .iship
  {
-    height: 5em;
+    height: 8em;
     animation: letgo 5s linear running infinite;
  }
  @keyframes letgo
  {
-    from 
+    0% 
     { 
         opacity: 1;
         margin-left:-20%; 
@@ -129,14 +127,17 @@ input:hover
     80%
     {
         opacity: 1;
+        height: 8em;
+        
     }
-    to 
+    100%
     {
-        margin-left:95%;
+        margin-left:94%;
         opacity: 0;
+        height: 0em;
     }
  }
- /* .loader2:hover,.loader3:hover
+ .loader:hover
  {
      animation-play-state: paused;
- } */
+ }
