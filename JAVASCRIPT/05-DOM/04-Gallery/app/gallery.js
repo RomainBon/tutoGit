@@ -1,13 +1,9 @@
 import { Viewers } from "./component/viewer.js";
 import { Thumbnails } from "./component/thumbnails.js"
+import { Component } from "./component/component.js";
 
-export class Gallery
+export class Gallery extends Component
 {
-    constructor(domElt)
-    {
-        this.root = domElt;
-    }
-
     init()
     {
         this.root.innerHTML =`
