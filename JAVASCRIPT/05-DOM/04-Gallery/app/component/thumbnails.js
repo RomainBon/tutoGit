@@ -5,7 +5,7 @@ export class Thumbnails extends Component
 {
     init()
     {
-        this.root.innerHTML =this.displayList(IMAGE_LIST);
+        this.root.innerHTML =Thumbnails.displayList(IMAGE_LIST);
     }
 
     static displayList(list)
