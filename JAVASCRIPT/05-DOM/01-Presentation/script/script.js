@@ -28,3 +28,8 @@ let li = document.createElement('li');
 li.textContent='JE SUIS CREE DU SCRIPT JS';
 li.className='liList'
 ulListe.appendChild(li);
+
+let section = document.querySelector('#content');
+let nomSection ="Section Aticle";
+let content =`<h4>Titre de ${nomSection}</h4>"<p>blablablabla</p>`;
+section.innerHTML = contetnt;
