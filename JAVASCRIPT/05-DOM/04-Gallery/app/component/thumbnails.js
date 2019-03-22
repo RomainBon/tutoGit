@@ -1,11 +1,15 @@
 import { Component } from "./component.js";
-import {IMAGE_LIST} from "../image-List.js";
+import {ImageListXhr} from "../image-List.js";
 
 export class Thumbnails extends Component
 {
     init()
     {
-        this.root.innerHTML =Thumbnails.displayList(IMAGE_LIST);
+        ImageListXhr.getList().then((responseData)=>
+        {
+            this.root.innerHTML= Thumbnails.displayList(responseData);
+        });
+        this.root.innerHTML ="<p>Chargement des Images</p>";
     }
 
     static displayList(list)
