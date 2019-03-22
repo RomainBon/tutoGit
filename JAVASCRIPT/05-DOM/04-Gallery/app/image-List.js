@@ -1,14 +1,10 @@
  export class ImageListXhr
 {
-  static async getList()
+  static getList()
   {
-    try {
-      const reponse = await fetch('./app/tux.json');
-      return await reponse.json();
-    }
-    catch (error) {
-      return console.log("Message erreur :", error);
-    }
+    return fetch('./app/tux.json')
+    .then(reponse =>reponse.json())
+    .catch(error => console.log("Message erreur :",error));
   }
 }
  

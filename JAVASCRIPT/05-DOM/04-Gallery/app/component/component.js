@@ -4,4 +4,4 @@ export class Component
     {
         this.root = domElt;
     }
-}
+} 
